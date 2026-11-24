@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-cream: #fff9ed;
+  --color-cream-soft: #fffdf8;
+  --color-cream-2: #f7edda;
+  --color-cream-3: #f5ead5;
+  --color-gold: #e9c66d;
+  --color-gold-hover: #dfb957;
+  --color-gold-dark: #9c7426;
+  --color-gold-accent: #c89c3d;
+  --color-cocoa: #523925;
+  --color-cocoa-deep: #3d291a;
+  --color-muted: #766450;
+  --color-line: #ebe0cc;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-cream);
+    color: var(--color-cocoa);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-cream);
+    color: var(--color-cocoa);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold-accent);
+    outline-offset: 2px;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.mochi-blob {
+  border-radius: 48% 52% 43% 57% / 46% 43% 57% 54%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Moco — Mochi Dessert Store",
+  "description": "Japanese Dessert Website untuk Moco – Mochi Dessert Store dengan katalog varian mochi, keranjang belanja, checkout WhatsApp, Admin Dashboard, serta keamanan UMKM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
